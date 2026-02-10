@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>memlocs< - interpunctual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../media/interpunct-favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title works-page-title">>memlocs<</h1>
+        <div class="project-details">
+            <p class="detail-line" id="detail-avatar"><strong><a href="../dossier/avatars.html">avatar(s)</a>:</strong> nibiru fae, penny lane, polexia al-twal, tris kemet</p>
+            <p class="detail-line" id="detail-role"><strong>role(s):</strong> student, 3D modeler</p>
+            <p class="detail-line" id="detail-associate"><strong>associate(s):</strong> <a href="https://afsart.com/">andrew f. scott</a></p>
+            <p class="detail-line" id="detail-date"><strong>date(s):</strong> 12.2023</p>
+            <p class="detail-line" id="detail-location"><strong>location(s):</strong> dallas, tx, usa</p>
+            <p class="detail-line" id="detail-platform"><strong>platform(s):</strong> mac mini m1, rhinoceros 3d, sketchfab</p>
+            
+        </div>
+    <section class="project-section">
+            <div class="project-media carousel-wrapper">
+                <div class="carousel-container" id="carousel">
+                    <img src="/media/memlocs/front-view.jpg" class="carousel-image">
+                    <img src="/media/memlocs/top-view.jpg" class="carousel-image">
+                </div>
+                <button class="carousel-control carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-control carousel-next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+        <section class="project-section">
+            <h2 class="section-title">abstract</h2>
+            <p class="description">
+                envisioned as hybrid cranial and neuroprosthetics that utilize deep brain stimulation to fulfill their intended purpose of external mental storage, <em>>memlocs<</em> offer an afrofuturist outlook on a posthuman world to come.
+                these bionic enhancements aim to go beyond the functionality of their medical and cosmetic predecessors by granting their wearers pseudo-telepathic abilities in the form of remote synaptic connectivity with each other, resulting in heightened semantic interference thresholds, more efficient processing, and improved recall. 
+                equal parts treatment and fashion, this technology is well-suited to an exceedingly wide range of applications encompassing cranioplasty, cosmesis, and cooperative data management.
+            </p>
+        </section>
+        <section class="project-section">
+            <h2 class="section-title">reference(s)</h2>
+            <div class="project-media project-media-grid-double">
+                <div>
+                    <img src="/media/memlocs/sidelock-of-youth.jpg" class="image-aspect-square">
+                    <h3 class="song-title">sidelock of youth</h3>
+                </div>
+                <div>
+                    <img src="/media/memlocs/bantu-knots.jpg" class="image-aspect-square">
+                    <h3 class="song-title">bantu knots</h3>
+                </div>
+            </div>
+            <p class="description">
+                protective styling is a <a href="https://www.isbe.net/Documents/Historical-Significance-of-Black-Hairstyles.pdf">tradition</a> that emerged within african societies millennia ago, as early as 3500 bc. 
+                historical evidence suggests that communities such as the akan, bantu, and senegalese and their members practiced this to preserve their natural hair texture, reduce the need for daily manipulation, safeguard against the elements, express themselves, and organize. 
+                in ancient egypt, the sidelock of youth affirmed wearers' status as children, an æsthetic signifier they exchanged for others after undergoing rites of passage. 
+                during the transatlantic slave trade, displaced peoples of the black diaspora continued this traditional form of haircare despite colonists engaging in tactics of cultural erasure (e.g., forced shaving).
+                even serving as a tool to escape captivity, it allowed recently freed individuals to safely store and communicate information pertinent to the underground railroad network.
+            </p>
+            <p class="description">
+                in contemporary african-american culture, the acts of braiding, twisting, and rolling hair as they exist outside the market remain highly respected and intimate customs.
+                they are creative processes that take vulnerability as given, often performed individually, with close friends, blood relatives, romantic interests, or other loved ones.
+                not only do the physiological and aesthetic outcomes of doing so remain desirable, but protective hairstyles are a way of presenting <a href="/media/memlocs/tate-reference.PDF">blackness as beautiful</a> and strong in an ideological environment that to this day holds it to be <a href="/media/memlocs/bizimungu-reference.PDF">unruly and dangerous</a>.
+            </p>
+            <p class="description">
+                shared experiences, in conjunction with the concurrent acts of recording and transmitting them, are at the core of efforts to construct identity, develop consensus reality, and (dis)articulate perceived contradictions within both. 
+                in 1985, dr. daniel wegner put forth <a href="https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wegner%20Transactive%20Memory.pdf">a novel theory</a> of group mind he dubbed "differentiated transactive memory."
+                this phenomenon, as described by wegner, involves the interdependent encoding, storage, and retrieval of information within collectives, where individuals rely on the expertise and knowledge of others to supplement their cognitive capacities, forming an analog peer-to-peer network; look to the underground railroad for a topical example.
+            </p>
+        </section>
+        <section class="project-section">
+            <h2 class="section-title">process</h2><div class="process-content">
+            <div class="project-media project-media-grid-double">
+                <div>
+                    <img src="/media/memlocs/sketch-front.jpeg" class="image-aspect-square">
+                </div>
+                <div>
+                    <img src="/media/memlocs/sketch-side.jpeg" class="image-aspect-square">
+                </div>
+                <h3 class="song-title image-grid-caption">prototype: front + side view</h3>
+            </div>
+                <p class="description">
+                    at the outset of this project, i imported prototype drawings i made in procreate into rhino 8 using the "picture" command. 
+                    to create the base plates for the implants, i used my gesture lines as guides to draw curves around the circumference of a pre-made head model, turned them into surfaces using the "patch" command, and offset them by 0.75 units. 
+                    next, i generated cylindrical primitives, filleted them, and manipulated their scales and positions to mirror the Bantu knot nodes as depicted in my sketches.
+                    for expediency, i sourced and modified a sketchfab asset to help articulate the braided cords. 
+                    afterward, i placed toruses at the base of each protrusion to imbue the sum of their parts with polish and elegance.
+                </p>
+                <p class="description">
+                    furthermore, i sourced two textures from google images to create custom skins for the nodes and braids, one of a circuit board and one of some mesh fabric.
+                    conversely, the toruses are assigned rhino's default copper material with some light adjustments for aesthetic consistency.
+                    the head mesh and associated facial features were already color-treated, so i did not make any alterations to them.
+                </p>
+            </div>
+        </section>
+        <section class="project-section"><h2 class="section-title">connect</h2><div class="cta-buttons"><a href="../dossier/statement.html" class="cta-button">read my statement</a><a href="#" class="cta-button cta-button-accent">support my work</a></div></section>
+        <nav class="linktree">
+            <ul>
+                <li><a href="../index.html" id="back-link" class="form-back">back</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../app.js"></script>

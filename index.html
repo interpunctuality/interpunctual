@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interpunctual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="media/interpunct-favicon.ico">
+</head>
+<body>
+    <video autoplay muted loop playsinline>
+        <source src="media/site-bg.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h2 class="subtitle">it's nice meeting you here!</h2>
+        <h1 class="title">i am<a href="dossier/avatars.html" class="typed-word-link"><span class="word-wrapper"><span id="word"></span>.</span></a></h1>
+        <p class="statement">i create digital art exhibits that hold space for change using sound, pixels, space, code, and emerging modes of communication. <a href="dossier/statement.html" class="read-more">read statement</a></p>
+        
+        <div class="panel-stack">
+        <nav class="linktree">
+            <ul>
+                <li class="subsection">
+                    <a href="#" class="subsection-toggle" aria-expanded="false" aria-controls="works-list">works</a>
+                    <ul class="sub-list works-columns" id="works-list">
+                        <li class="works-column">
+                            <ul class="works-sublist">
+                                <li><a href="works/defeat-dead.html">¡defeat Dead! [upcoming]</a></li>
+                                <li><a href="works/atnaḥ.html">>atnaḥ< [upcoming]</a></li>
+                                <li><a href="works/masquerade.html">>masquerade< [upcoming]</a></li>
+                                <li><a href="works/spoke.html">>spoke< [upcoming]</a></li>
+                                <li><a href="works/phi.html">>φ< [upcoming]</a></li>
+                                <li><a href="works/outerworld.html">>outerworld< [upcoming]</a></li>
+                                <li><a href="works/digest.html">>digest< [upcoming]</a></li>
+                                <li><a href="works/kin.html">>kin< [upcoming]</a></li>
+                                <li><a href="works/horus.html">>horus< [upcoming]</a></li>
+                                <li><a href="works/stella.html">>stella< [upcoming]</a></li>
+                            </ul>
+                        </li>
+                        <li class="works-column">
+                            <ul class="works-sublist">
+                                <li><a href="works/la-declaración.html">>la declaración<</a></li>
+                                <li><a href="works/current.html">>current<</a></li>
+                                <li><a href="works/memlocs.html">>memlocs<</a></li>
+                                <li><a href="works/omni.html">>omni<</a></li>
+                                <li><a href="works/raziel.html">>raziel<</a></li>
+                                <li><a href="works/no-one.html">>no-one<</a></li>
+                                <li><a href="works/nibiru.html">>nibiru<</a></li>
+                                <li><a href="works/polexia.html">>polexia<</a></li>
+                                <li><a href="works/zoe.html">>zoe<</a></li>
+                                <li><a href="works/tweestrijd.html">>tweestrijd<</a></li>
+                                <li><a href="works/peak.html">>peak<</a></li>
+                                <li><a href="works/light-rail.html">>light rail<</a></li>
+                                <li><a href="works/li-milan.html">>li milan<</a></li>
+                                <li><a href="works/helion.html">>helion<</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="subsection">
+                    <a href="#" class="subsection-toggle" aria-expanded="false" aria-controls="dossier-list">dossier</a>
+                    <ul class="sub-list" id="dossier-list">
+                        <li><a href="dossier/statement.html">statement</a></li>
+                        <li><a href="dossier/logs.html">logs</a></li>
+                        <li><a href="dossier/avatars.html">avatars</a></li>
+                        <!-- <li><a href="dossier/maps.html">maps</a></li> -->
+                        <!-- <li><a href="dossier/recipes.html">recipes</a></li> -->
+                        <!-- <li><a href="dossier/analysis.html">analysis</a></li> -->
+                    </ul>
+                </li>
+                <li class="subsection">
+                        <a href="#" class="subsection-toggle" aria-expanded="false" aria-controls="patronage-list">patronage</a>
+                        <ul class="sub-list" id="patronage-list">
+                            <li><a href="https://ko-fi.com/interpunctual">one-time</a></li>
+                            <li><a href="https://www.patreon.com/cw/interpunctual">recurring</a></li>
+                            <li><a href="https://wishlist.com/l/gZQqYN">wishlist</a></li>
+                        </ul>
+                    </li>
+                </li>
+                <li><a href="https://interpunctual.myshopify.com/" target="_blank" rel="noopener" class="external-link">boutique</a></li>                
+                <li><a href="#" id="contact-link" class="contact-arrow">contact</a></li>
+            </ul>
+        </nav>
+        </nav>
+        <!-- Contact form hidden by default -->
+    <section id="contact-form" class="contact-form" aria-hidden="true">
+        <!-- <h3 class="form-title">contact</h3> -->
+        <form id="contactForm" novalidate>
+            <!-- Honeypot field for spam protection (hidden from users) -->
+            <input type="text" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+            
+            <div class="form-row">
+                <!-- <label for="name">name</label> -->
+                <input type="text" id="name" name="name" placeholder="name" required aria-required="true">
+                <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-row">
+                <!-- <label for="email">email</label> -->
+                <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true">
+                <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-row">
+                <!-- <label for="phone">phone</label> -->
+                <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567">
+                <span class="form-error" id="phone-error"></span>
+            </div>
+            <div class="form-row">
+                <!-- <label for="subject">subject</label> -->
+                <select id="subject" name="subject" required aria-required="true">
+                    <option value="" disabled selected>choose a subject…</option>
+                    <option value="general">general</option>
+                    <option value="booking">booking</option>
+                    <option value="commissions">commissions</option>
+                    <option value="licensing">licensing</option>
+                    <option value="proposals">proposals</option>
+                </select>
+                <span class="form-error" id="subject-error"></span>
+            </div>
+            <div class="form-row">
+                <!-- <label for="affiliation">affiliation</label> -->
+                <input type="text" id="affiliation" name="affiliation" placeholder="affiliation">
+            </div>
+            <div class="form-row">
+                <!-- <label for="message">message</label> -->
+                <textarea id="message" name="message" rows="1" placeholder="message..." required aria-required="true"></textarea>
+                <span class="form-error" id="message-error"></span>
+            </div>
+            <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+                <div class="form-actions">
+                    <a href="#" id="form-cancel" class="form-back">back</a>
+                    <button type="submit" class="form-send">send</button>
+                </div>
+        </form>
+        </section>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>raziel< - interpunctual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../media/interpunct-favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title works-page-title">>raziel<</h1>
+        <div class="project-details">
+            <p class="detail-line" id="detail-avatar"><strong><a href="../dossier/avatars.html">avatar(s)</a>:</strong> gb-073, nibiru fae, penny lane, polexia al-twal, stella nazar, zøe ha-razim</p>
+            <p class="detail-line" id="detail-role"><strong>role(s):</strong> student, art director, product designer, software developer</p>
+            <p class="detail-line" id="detail-associate"><strong>associate(s):</strong> <a href="https://profiles.utdallas.edu/james.fraley">dr. james fraley</a>, dylan burt, emily consuelo, lilian freel, gray freeman, enne dawson</p>
+            <p class="detail-line" id="detail-date"><strong>date(s):</strong> 01.2024-05.2024</p>
+            <p class="detail-line" id="detail-location"><strong>location(s):</strong> dallas, tx, usa</p>
+            <p class="detail-line" id="detail-platform"><strong>platform(s):</strong> raspberry pi, i2c, qwiic/stemma qt, python, nano, chatgpt</p>
+            
+        </div>
+        <section class="project-section">
+            <div class="project-media">
+                <img src="../media/raziel/raziel-prototype.png" alt="raziel prototype">
+                <div class="cta-buttons">
+                    <a href="../media/raziel/raziel-outline.pdf" class="cta-button" target="_blank" rel="noopener">outline (pdf)</a>
+                    <a href="../media/raziel/raziel-progress-report.pdf" class="cta-button" target="_blank" rel="noopener">progress report (pdf)</a>
+                </div>
+            </div>
+        </section>
+        <section class="project-section">
+            <h2 class="section-title">abstract</h2>
+            <p class="description">
+                a multisensory recorder and biofeedback device, <em>>raziel<</em> samples data about its environment and the people therein to provide real-time insights on biopsychosocial health and facilitate <em>making</em> history as an alternative to mere spectatorship.
+                in addition to the operator's heart rate and body temperature, it collects audiovisual, spatial, and chemical information and can store it for later playback.
+                participants assign labels to each interaction; using the same designation for several logs adds them to a siloed repository from which a random entry will be selected for reproduction when queried by name.
+                each contributor thus self-determines how accessible their memories are based on the complexity and renown of their aliases.
+                the toolbox used to bring this project to life includes python code, an array of stemma qt sensors, and a raspberry pi 4 model b microcontroller.
+                potential applications include personal journaling, community archival, home or occupational safety, and therapeutic interventions.
+                as such, it helps foster novel ways of re-membering (i.e., altered states of being) together, liberating the past from hegemony and acknowledging it as a site for the exercise of careful thought and creative agency.
+            </p>
+        </section>
+        <section class="project-section">
+            <h2 class="section-title">process</h2>
+            <h3 class="subsection-title">pre-production</h3>
+            <p class="description">
+                as my capstone, this assignment is the culmination of my baccalaureate pursuit at the university of texas at dallas and a significant milestone in my artistic growth.
+                development began when i drafted a project description, outline, timeline, and materials list.
+                doing so effectively required me to conduct some preliminary technical research on relevant topics such as sensory receptors, information processing, and communication - human and nonhuman alike.
+                i also intended to sketch design mockups at this stage, but failed to do so in the time i allotted to the task.
+                finally, i submitted these documents to my peer group, who, upon review, returned highly instructive critiques that encouraged me to focus on issues of thematic clarity and aesthetics.
+            </p>
+            <h3 class="subsection-title">production</h3>
+            <p class="description">
+                the first deliverable associated with this manufacturing phase to emerge was the high-level user flow embedded into my "progress report" slideshow.
+                this diagram and the pseudocode that comprises it provided me with a reference for the intended operating logic.
+                upon receiving the necessary supplies, i immediately began assembling a hardware prototype.
+                during setup, i noticed that the software libraries enabling the i2c devices to communicate data about the environment with my raspberry pi are all python packages, a realization that prompted me to forgo my initial plan to create a java app using the processing ide in favor of writing an equivalent, yet more lightweight script using the nano text editor.
+                moreover, i neglected to acquire backpacks for the two lcds intended as the primary interfaces between <em>>raziel<</em> and its visitors, leaving them without power supplies and forcing me to use the hdmi out port to connect to a traditional desktop monitor.
+                i also opted to use a digital pulse oximeter rather than the analog heartbeat sensor blueprinted from the outset due to the lack of analog input/output pins on the central pcb.
+            </p>
+            <h3 class="subsection-title">post-production</h3>
+            <p class="description">
+                the final leg of this undertaking primarily revolved around identifying bottlenecks that threatened my ability to meet the established deadline and shelving or finding alternatives to auxiliary features that were causing them. 
+                for example, instead of 3d printing an enclosure, i opted to showcase <em>>raziel<</em> using a mission stand.
+                furthermore, it lacks haptic feedback, sound recording, and electrocardiographic monitoring capabilities, and will assuredly benefit from the inclusion of these organs in the future.
+                lastly - having elected to make a text-based, command-line application rather than one with a graphical user interface - i installed <a href="https://github.com/Swordfish90/cool-retro-term">a crt terminal emulator</a> from github, which, beyond its role as visually alluring, serves as a mnemonic for the vintage special-purpose computers that this one is a descendant of.
+            </p>
+        </section>
+        <section class="project-section"><h2 class="section-title">connect</h2><div class="cta-buttons"><a href="../dossier/statement.html" class="cta-button">read my statement</a><a href="#" class="cta-button cta-button-accent">support my work</a></div></section>
+        <nav class="linktree">
+            <ul>
+                <li><a href="../index.html" id="back-link" class="form-back">back</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../app.js"></script>
+
