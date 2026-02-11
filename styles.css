@@ -1013,6 +1013,10 @@ button[type="submit"]:disabled {
     margin-bottom: 0;
 }
 
+.project-media iframe:first-child {
+    margin-top: 0;
+}
+
 /* Song title styling */
 .song-title {
     font-size: clamp(110%, 1.6vw, 125%);
