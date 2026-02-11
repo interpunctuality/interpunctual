@@ -1013,7 +1013,7 @@ button[type="submit"]:disabled {
     margin-bottom: 0;
 }
 
-.project-media iframe:first-child {
+.project-media iframe.video-full-width {
     margin-top: 0;
 }
 
