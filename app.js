@@ -58,6 +58,13 @@ document.addEventListener('mozfullscreenchange', handleFullscreenChange);
 
 const ROTATION_SPEED = 180; // degrees per second
 
+function setCursorVisible(visible) {
+    cursor.style.display = visible ? 'block' : 'none';
+    if (!visible && isHovering) {
+        isHovering = false;
+    }
+}
+
 function animateRotation(currentTime) {
     if (!lastTime) lastTime = currentTime;
     const deltaTime = (currentTime - lastTime) / 1000; // convert to seconds
@@ -91,19 +98,13 @@ document.addEventListener('mousemove', (e) => {
     // Check if hovering over any clickable element
     const target = document.elementFromPoint(e.clientX, e.clientY);
     
-    // Check if hovering over YouTube iframe
-    const isYouTubeIframe = target && target.tagName === 'IFRAME' && target.src && target.src.includes('youtube.com');
-    
-    // Hide cursor entirely when over YouTube videos
-    if (isYouTubeIframe) {
-        cursor.style.display = 'none';
-        if (isHovering) {
-            isHovering = false;
-        }
+    // Hide cursor entirely when over any iframe
+    const isIframe = target && target.tagName === 'IFRAME';
+    if (isIframe) {
+        setCursorVisible(false);
         return;
-    } else {
-        cursor.style.display = 'block';
     }
+    setCursorVisible(true);
     
     // Check for clickable elements: links, buttons, or elements with cursor: pointer
     const isClickable = target && (
@@ -140,6 +141,11 @@ document.addEventListener('mousemove', (e) => {
     } else if (!shouldHover && isHovering) {
         isHovering = false;
     }
+});
+
+document.querySelectorAll('iframe').forEach((frame) => {
+    frame.addEventListener('mouseenter', () => setCursorVisible(false));
+    frame.addEventListener('mouseleave', () => setCursorVisible(true));
 });
 
 document.addEventListener('mousedown', () => {

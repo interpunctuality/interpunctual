@@ -24,6 +24,11 @@ video::-webkit-media-controls-panel {
     cursor: none !important;
 }
 
+/* Restore system cursor over embeds */
+iframe {
+    cursor: auto !important;
+}
+
 /* Show default cursor only in fullscreen */
 :fullscreen,
 :fullscreen * {
@@ -1014,6 +1019,10 @@ button[type="submit"]:disabled {
 }
 
 .project-media iframe.video-full-width {
+    margin-top: 0;
+}
+
+.project-media iframe:only-of-type {
     margin-top: 0;
 }
 
